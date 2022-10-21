@@ -1,4 +1,4 @@
-<div style="width:100%;height:0;padding-bottom:63%;position:relative;"><iframe src="https://giphy.com/embed/6OrCT1jVbonHG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/wiki-hacking-obd-6OrCT1jVbonHG">via GIPHY</a></p>
+<a href="#" target="blank"><img align="center" src="http://outskirtsbattledomewiki.com/index.php/13-general-obd-terms/94-hacking" height="100" /></a>
 
 
 <h1 align="center">Hi 👋 There, I'm Sunny Kumar</h1> 
