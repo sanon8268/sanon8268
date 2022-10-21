@@ -1,4 +1,4 @@
-<a href="" target="blank"><img align="center" src="giphy.gif" height="100" /></a>
+![](giphy(1).gif)
 
 
 <h1 align="center">Hi 👋 There, I'm Sunny Kumar</h1> 
