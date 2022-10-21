@@ -1,4 +1,4 @@
-![](giphy.gif)
+<center>![](giphy.gif)</center>
 
 
 <h1 align="center">Hi 👋 There, I'm Sunny Kumar</h1> 
