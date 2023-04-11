@@ -10,9 +10,14 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/sunnykr8268" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sunnykr8268" height="30" width="40" /></a>
-<a href="https://instagram.com/sunny8268_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sunny8268_" height="30" width="40" /></a>
+  <a href="https://linkedin.com/in/sunnykr8268" target="blank">
+    <img align="center" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Flinkedin_174857&psig=AOvVaw2xl7ihzVhxTzqbKcspSAN1&ust=1681317071497000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJiMkaigov4CFQAAAAAdAAAAABAd" alt="sunnykr8268" height="30" width="40" />
+  </a>
+  <a href="https://instagram.com/sunny8268_" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sunny8268_" height="30" width="40" />
+  </a>
 </p>
+
 
 
 <h3 align="left">Languages and Tools:</h3>
