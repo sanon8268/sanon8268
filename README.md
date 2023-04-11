@@ -3,6 +3,13 @@
 
 <h1 align="center">Hi 👋 There, I'm Sunny Kumar</h1> 
 <h3 align="center">A Passionate Code and Frontend developer from India</h3>
+<div align="center">
+  <h2>👋 Hello People, 🚀</h2>
+  <h3>📍 Based in India<br>
+     🎓 UnderGrad Student at Haldia Institute of Technology<br>
+     💻 Passionate about code and design 👨‍<br></h3>
+</div>
+
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sanon8268" alt="sanon8268" /></a> </p>
 
