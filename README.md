@@ -1,7 +1,7 @@
 # 💫 About Me:
 
 <p align="center">
-<img alt="Coder GIF" width=550 src="https://cdn.dribbble.com/users/7813810/screenshots/17447483/media/2f93ce55516c9b590bec1c8950a67a62.gif" />
+<img alt="Coder GIF" width=400 src="https://cdn.dribbble.com/users/7813810/screenshots/17447483/media/2f93ce55516c9b590bec1c8950a67a62.gif" />
 </p>
 
 
