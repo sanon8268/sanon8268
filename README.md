@@ -5,7 +5,7 @@
 </p>
 
 
-<h1 align="center">Hi 👋 There, I'm Sunny Kumar</h1> 
+<h1 align="center">Hi 👋 There, I'm Sunny</h1> 
 <h3 align="center">A Passionate Code and Frontend developer from India</h3>
 <div align="center">
   <h2>👋 Hello People, 🚀</h2>
