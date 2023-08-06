@@ -11,7 +11,7 @@
   <h2>👋 Hello People, 🚀</h2>
   <h3>📍 Based in India<br>
      🎓 UnderGrad Student at Haldia Institute of Technology<br>
-     💻 Passionate about code and design 👨‍
+     💻 Passionate about code and design 👨‍<br>
      🖤 Deep Interest in Cyber Security 💻<br></h3>
 </div>
 
