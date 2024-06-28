@@ -26,6 +26,9 @@
 ![](https://github-readme-streak-stats.herokuapp.com/?user=sanon8268&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=sanon8268&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
+## 🏆 Try Hack Me
+![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/sanon8268.png)
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=sanon8268&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
