@@ -18,15 +18,22 @@
   </div>
 
 <div align="center">
-  <h2 style="color: #0f0;">Welcome to My Digital Realm! 🚀</h2>
-  <h3 style="color: #0f0; font-family: monospace;">
-    <img width="20%" align="right" src="https://github.com/user-attachments/assets/9c826dd0-fd72-49ba-af60-e79f64344f59">
-    🔒 Cybersecurity Enthusiast | Ethical Hacking & Defense<br>
-    🛡️ Exploring Network Security, Digital Forensics & Threat Analysis<br>
-    🐍 Programmer with experience in Python, C++ & JavaScript<br>
-    ⚡ Focused on Web, Cloud & Application Security<br>
-    🎯 CTF Player | Bug Bounty Learner | Lifelong Student of Tech<br><br>
-    <strong>Updating:</strong> Journey to Cybersecurity Specialist
+  <h2>🔴 Welcome to My Realm 🚀</h2>
+
+  <img
+    width="20%"
+    align="right"
+    src="https://github.com/user-attachments/assets/9c826dd0-fd72-49ba-af60-e79f64344f59"
+    alt="Cybersecurity"
+  />
+
+  <h3>
+    🔴 Red Team Enthusiast | Offensive Security<br>
+    ⚔️ Adversary Simulation • Penetration Testing • Security Research<br>
+    🎯 Active Directory • Web Exploitation • Cloud & Network Security<br>
+    🐍 Python • C/C++ • JavaScript • Security Automation<br>
+    🚩 CTF Player | Labs | Continuous Learning in Offensive Security<br><br>
+    <strong>Currently:</strong> Building skills toward becoming a Red Team Operator
   </h3>
 </div>
 
