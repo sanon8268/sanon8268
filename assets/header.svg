@@ -1,41 +1,69 @@
 <svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
 <defs>
-  <radialGradient id="bg" cx="50%" cy="50%" r="60%">
-    <stop offset="0%" stop-color="#2a0000"/>
-    <stop offset="50%" stop-color="#0e0508"/>
+  <radialGradient id="bg" cx="50%" cy="55%" r="65%">
+    <stop offset="0%" stop-color="#1e0000"/>
+    <stop offset="55%" stop-color="#0d0508"/>
     <stop offset="100%" stop-color="#080810"/>
   </radialGradient>
+  <radialGradient id="eg" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ff0000" stop-opacity=".5"/>
+    <stop offset="100%" stop-color="#ff0000" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="pocket" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#050003"/>
+    <stop offset="100%" stop-color="#2a0000"/>
+  </linearGradient>
+  <linearGradient id="flap" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#14101a"/>
+    <stop offset="100%" stop-color="#2b0a0a"/>
+  </linearGradient>
   <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-    <feGaussianBlur stdDeviation="8" result="b1"/>
-    <feGaussianBlur stdDeviation="3" result="b2"/>
-    <feMerge><feMergeNode in="b1"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <pattern id="dg" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
     <circle cx="1" cy="1" r=".6" fill="#ff000015"/>
   </pattern>
-  <pattern id="sc" x="0" y="0" width="1" height="3" patternUnits="userSpaceOnUse">
-    <rect width="1" height="1.5" fill="#000" opacity=".07"/>
-  </pattern>
   <clipPath id="wc"><rect width="900" height="240"/></clipPath>
+  <clipPath id="eyeclip"><path d="M-26,0 Q0,-18 26,0 Q0,18 -26,0Z"/></clipPath>
   <style>
-    @keyframes eyeShow{0%,18%{opacity:0}25%,68%{opacity:1}75%,100%{opacity:0}}
-    @keyframes pupilMove{0%,22%{transform:translateX(0)}32%{transform:translateX(-7px)}48%{transform:translateX(8px)}62%{transform:translateX(-4px)}70%,100%{transform:translateX(0)}}
-    @keyframes blink{0%,32%,37%,64%,69%,100%{transform:scaleY(0)}35%{transform:scaleY(1)}67%{transform:scaleY(1)}}
-    @keyframes ringOut{0%{transform:scale(.04);opacity:.8}100%{transform:scale(24);opacity:0}}
+    @keyframes fold{
+      0%,12%{transform:scaleX(1)}
+      24%,70%{transform:scaleX(.03)}
+      82%,100%{transform:scaleX(1)}
+    }
+    @keyframes eyeShow{
+      0%,18%{opacity:0}
+      28%,68%{opacity:1}
+      76%,100%{opacity:0}
+    }
+    @keyframes look{
+      0%,30%{transform:translateX(0)}
+      38%{transform:translateX(-7px)}
+      50%{transform:translateX(8px)}
+      60%{transform:translateX(-3px)}
+      66%,100%{transform:translateX(0)}
+    }
+    @keyframes blink{
+      0%,44%,48%,100%{transform:scaleY(1)}
+      46%{transform:scaleY(.08)}
+    }
+    @keyframes rayPulse{0%,100%{opacity:.07}50%{opacity:.15}}
     @keyframes wR{from{transform:translateX(0)}to{transform:translateX(-220px)}}
     @keyframes wL{from{transform:translateX(-220px)}to{transform:translateX(0)}}
-    @keyframes rayPulse{0%,100%{opacity:.13}50%{opacity:.25}}
-    @keyframes glitch{0%,84%,100%{opacity:0;transform:translateX(0)}85%{opacity:.45;transform:translateX(6px)}86%{opacity:.2;transform:translateX(-5px)}87%{opacity:0}91%{opacity:.35;transform:translateX(5px)}92%{opacity:0}}
+    @keyframes glitch{
+      0%,84%,100%{opacity:0;transform:translateX(0)}
+      85%{opacity:.45;transform:translateX(6px)}
+      86%{opacity:.2;transform:translateX(-5px)}
+      87%{opacity:0}
+      91%{opacity:.35;transform:translateX(5px)}
+      92%{opacity:0}
+    }
+    .fold{animation:fold 10s ease-in-out infinite}
+    .eyeShow{animation:eyeShow 10s ease-in-out infinite}
+    .look{animation:look 10s ease-in-out infinite}
+    .blink{animation:blink 10s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
     .rays{animation:rayPulse 4s ease-in-out infinite}
-    .eyeL{animation:eyeShow 12s ease-in-out infinite}
-    .eyeR{animation:eyeShow 12s ease-in-out infinite;animation-delay:.08s}
-    .pupilL{animation:pupilMove 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
-    .pupilR{animation:pupilMove 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center;animation-delay:.04s}
-    .lidL{animation:blink 12s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 0%}
-    .lidR{animation:blink 12s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 0%;animation-delay:.04s}
-    .ring{animation:ringOut 4s ease-out infinite;transform-box:fill-box;transform-origin:center}
-    .ring:nth-child(2){animation-delay:1.33s}
-    .ring:nth-child(3){animation-delay:2.66s}
     .wv1{animation:wR 7s linear infinite}
     .wv2{animation:wL 7s linear infinite}
     .gt{animation:glitch 10s step-end infinite}
@@ -44,58 +72,86 @@
 
 <rect width="900" height="240" fill="url(#bg)"/>
 <rect width="900" height="240" fill="url(#dg)"/>
-<rect width="900" height="240" fill="url(#sc)"/>
 
 <g class="rays" transform="translate(450,112)">
-  <line x1="0" y1="0" x2="-440" y2="-118" stroke="#ff2200" stroke-width="1.6"/>
-  <line x1="0" y1="0" x2="-390" y2="-178" stroke="#ff0000" stroke-width="1.1"/>
-  <line x1="0" y1="0" x2="-295" y2="-210" stroke="#ff1500" stroke-width="1.5"/>
-  <line x1="0" y1="0" x2="-175" y2="-215" stroke="#ff0000" stroke-width="1"/>
-  <line x1="0" y1="0" x2="-62" y2="-212" stroke="#ff2200" stroke-width="1"/>
-  <line x1="0" y1="0" x2="0" y2="-212" stroke="#ff0000" stroke-width="2"/>
-  <line x1="0" y1="0" x2="62" y2="-212" stroke="#ff2200" stroke-width="1"/>
-  <line x1="0" y1="0" x2="175" y2="-215" stroke="#ff0000" stroke-width="1"/>
-  <line x1="0" y1="0" x2="295" y2="-210" stroke="#ff1500" stroke-width="1.5"/>
-  <line x1="0" y1="0" x2="390" y2="-178" stroke="#ff0000" stroke-width="1.1"/>
-  <line x1="0" y1="0" x2="440" y2="-118" stroke="#ff2200" stroke-width="1.6"/>
-  <line x1="0" y1="0" x2="-440" y2="92" stroke="#ff0000" stroke-width="1.5"/>
-  <line x1="0" y1="0" x2="-295" y2="130" stroke="#ff2200" stroke-width="1"/>
-  <line x1="0" y1="0" x2="295" y2="130" stroke="#ff2200" stroke-width="1"/>
-  <line x1="0" y1="0" x2="440" y2="92" stroke="#ff0000" stroke-width="1.5"/>
+  <line x1="0" y1="0" x2="-440" y2="-118" stroke="#ff2200" stroke-width="1.4"/>
+  <line x1="0" y1="0" x2="-295" y2="-210" stroke="#ff1500" stroke-width="1.2"/>
+  <line x1="0" y1="0" x2="-110" y2="-215" stroke="#ff0000" stroke-width="1"/>
+  <line x1="0" y1="0" x2="110" y2="-215" stroke="#ff0000" stroke-width="1"/>
+  <line x1="0" y1="0" x2="295" y2="-210" stroke="#ff1500" stroke-width="1.2"/>
+  <line x1="0" y1="0" x2="440" y2="-118" stroke="#ff2200" stroke-width="1.4"/>
+  <line x1="0" y1="0" x2="-440" y2="92" stroke="#ff0000" stroke-width="1.2"/>
+  <line x1="0" y1="0" x2="440" y2="92" stroke="#ff0000" stroke-width="1.2"/>
 </g>
 
-<g transform="translate(450,112)">
-  <circle class="ring" cx="0" cy="0" r="10" fill="none" stroke="#ff0000" stroke-width="1.5"/>
-  <circle class="ring" cx="0" cy="0" r="10" fill="none" stroke="#ff0000" stroke-width="1"/>
-  <circle class="ring" cx="0" cy="0" r="10" fill="none" stroke="#ff0000" stroke-width=".7"/>
-</g>
+<!-- ============ TOP-LEFT CORNER ============ -->
+<g>
+  <polygon points="0,0 120,0 0,120" fill="url(#pocket)"/>
 
-<g class="eyeL">
-  <ellipse cx="308" cy="108" rx="38" ry="20" fill="#250000"/>
-  <ellipse cx="308" cy="108" rx="27" ry="13" fill="#130202"/>
-  <g class="pupilL">
-    <ellipse cx="308" cy="108" rx="10" ry="12" fill="#8b0000"/>
-    <ellipse cx="308" cy="108" rx="5" ry="6" fill="#020000"/>
-    <ellipse cx="305" cy="103" rx="2.5" ry="1.5" fill="#ff3333" opacity=".55"/>
+  <g class="eyeShow">
+    <g transform="translate(36,38) rotate(12)">
+      <circle r="38" fill="url(#eg)"/>
+      <path d="M-26,0 Q0,-18 26,0 Q0,18 -26,0Z" fill="#1c0000" stroke="#ff2222" stroke-width="1.2"/>
+      <g clip-path="url(#eyeclip)">
+        <g class="blink">
+          <g class="look">
+            <circle r="10" fill="#ff1a1a"/>
+            <circle r="10" fill="none" stroke="#ff9a9a" stroke-width=".6" opacity=".7"/>
+            <ellipse rx="2.4" ry="9" fill="#000"/>
+            <circle cx="-3.5" cy="-3.5" r="1.7" fill="#ffd0d0" opacity=".85"/>
+          </g>
+        </g>
+        <polygon points="-30,-24 30,-24 30,3 -30,-8" fill="#0b0309"/>
+      </g>
+      <line x1="-27" y1="-8" x2="27" y2="3" stroke="#ff2222" stroke-width="1.5"/>
+    </g>
   </g>
-  <ellipse class="lidL" cx="308" cy="108" rx="27" ry="13" fill="#0a0010"/>
-  <ellipse cx="308" cy="108" rx="27" ry="13" fill="none" stroke="#ff0000" stroke-width=".7" opacity=".45"/>
-</g>
 
-<g class="eyeR">
-  <ellipse cx="592" cy="108" rx="38" ry="20" fill="#250000"/>
-  <ellipse cx="592" cy="108" rx="27" ry="13" fill="#130202"/>
-  <g class="pupilR">
-    <ellipse cx="592" cy="108" rx="10" ry="12" fill="#8b0000"/>
-    <ellipse cx="592" cy="108" rx="5" ry="6" fill="#020000"/>
-    <ellipse cx="589" cy="103" rx="2.5" ry="1.5" fill="#ff3333" opacity=".55"/>
+  <g transform="translate(60,60) rotate(45)">
+    <g class="fold">
+      <polygon points="-84.85,0 0,-84.85 0,84.85" fill="url(#flap)"/>
+      <polygon points="-62,0 -4,-58 -4,58" fill="none" stroke="#ff000030" stroke-width="1"/>
+      <line x1="-30" y1="-30" x2="-30" y2="30" stroke="#ff000040" stroke-width="1"/>
+    </g>
+    <line x1="0" y1="-84.85" x2="0" y2="84.85" stroke="#ff2222" stroke-width="1.8"/>
   </g>
-  <ellipse class="lidR" cx="592" cy="108" rx="27" ry="13" fill="#0a0010"/>
-  <ellipse cx="592" cy="108" rx="27" ry="13" fill="none" stroke="#ff0000" stroke-width=".7" opacity=".45"/>
 </g>
 
+<!-- ============ TOP-RIGHT CORNER (mirrored) ============ -->
+<g transform="translate(900,0) scale(-1,1)">
+  <polygon points="0,0 120,0 0,120" fill="url(#pocket)"/>
+
+  <g class="eyeShow">
+    <g transform="translate(36,38) rotate(12)">
+      <circle r="38" fill="url(#eg)"/>
+      <path d="M-26,0 Q0,-18 26,0 Q0,18 -26,0Z" fill="#1c0000" stroke="#ff2222" stroke-width="1.2"/>
+      <g clip-path="url(#eyeclip)">
+        <g class="blink">
+          <g class="look">
+            <circle r="10" fill="#ff1a1a"/>
+            <circle r="10" fill="none" stroke="#ff9a9a" stroke-width=".6" opacity=".7"/>
+            <ellipse rx="2.4" ry="9" fill="#000"/>
+            <circle cx="-3.5" cy="-3.5" r="1.7" fill="#ffd0d0" opacity=".85"/>
+          </g>
+        </g>
+        <polygon points="-30,-24 30,-24 30,3 -30,-8" fill="#0b0309"/>
+      </g>
+      <line x1="-27" y1="-8" x2="27" y2="3" stroke="#ff2222" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <g transform="translate(60,60) rotate(45)">
+    <g class="fold">
+      <polygon points="-84.85,0 0,-84.85 0,84.85" fill="url(#flap)"/>
+      <polygon points="-62,0 -4,-58 -4,58" fill="none" stroke="#ff000030" stroke-width="1"/>
+      <line x1="-30" y1="-30" x2="-30" y2="30" stroke="#ff000040" stroke-width="1"/>
+    </g>
+    <line x1="0" y1="-84.85" x2="0" y2="84.85" stroke="#ff2222" stroke-width="1.8"/>
+  </g>
+</g>
+
+<!-- Title -->
 <text x="450" y="125" text-anchor="middle" fill="#ff0000" opacity=".07" font-size="98" font-weight="bold" font-family="monospace" letter-spacing="14">SAN0N</text>
-<text x="450" y="125" text-anchor="middle" fill="#ff0000" opacity=".05" font-size="102" font-weight="bold" font-family="monospace" letter-spacing="14">SAN0N</text>
 <text x="450" y="124" text-anchor="middle" fill="#ee1111" font-size="90" font-weight="bold" font-family="monospace" letter-spacing="14" filter="url(#glow)">SAN0N</text>
 <text class="gt" x="450" y="124" text-anchor="middle" fill="#00ffcc" font-size="90" font-weight="bold" font-family="monospace" letter-spacing="14" opacity="0">SAN0N</text>
 
@@ -105,6 +161,7 @@
 <text x="450" y="168" text-anchor="middle" fill="#888888" font-size="12" font-family="monospace" letter-spacing="3">RED TEAM  ·  OFFENSIVE SECURITY  ·  CTF PLAYER</text>
 <text x="450" y="192" text-anchor="middle" fill="#ff000052" font-size="10" font-family="monospace" letter-spacing="2">⚔ ADVERSARY SIMULATION · PENETRATION TESTING · SECURITY RESEARCH ⚔</text>
 
+<!-- Moving waves -->
 <g clip-path="url(#wc)">
   <path d="M0,216 Q112,207 225,216 Q337,225 450,216 Q562,207 675,216 Q787,225 900,216 L900,240 L0,240Z" fill="#ff00001a"/>
   <path class="wv1" d="M-900,220 Q-787,212 -675,220 Q-562,228 -450,220 Q-337,212 -225,220 Q-112,228 0,220 Q112,212 225,220 Q337,228 450,220 Q562,212 675,220 Q787,228 900,220 Q1012,212 1125,220" fill="none" stroke="#ff000078" stroke-width="1.6"/>
@@ -114,15 +171,8 @@
 <rect width="900" height="2" fill="#dd0000" opacity=".9"/>
 <rect y="238" width="900" height="2" fill="#dd0000" opacity=".9"/>
 
-<polyline points="0,0 0,50" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-<polyline points="0,0 60,0" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-<polyline points="900,0 840,0" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-<polyline points="900,0 900,50" stroke="#ff0000" stroke-width="2.5" fill="none"/>
 <polyline points="0,240 0,190" stroke="#ff0000" stroke-width="2.5" fill="none"/>
 <polyline points="0,240 60,240" stroke="#ff0000" stroke-width="2.5" fill="none"/>
 <polyline points="900,240 840,240" stroke="#ff0000" stroke-width="2.5" fill="none"/>
 <polyline points="900,240 900,190" stroke="#ff0000" stroke-width="2.5" fill="none"/>
-
-<text x="68" y="26" fill="#ff000042" font-size="9" font-family="monospace" letter-spacing="1">[ INIT_BREACH ]</text>
-<text x="832" y="26" fill="#ff000042" font-size="9" font-family="monospace" text-anchor="end" letter-spacing="1">[ SYS_0WNED ]</text>
 </svg>
