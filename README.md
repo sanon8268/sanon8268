@@ -63,20 +63,47 @@
 ![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-### 🛠️ Security Tools
+---
 
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burp-suite&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
+## 🎯 Attack Surface
+
+<div align="center">
+
+| Domain | Tools | Status |
+|--------|-------|--------|
+| 🌐 Web App | Burp Suite · SQLMap · ffuf | ✅ Active |
+| 🏰 Active Directory | BloodHound · CrackMapExec · Impacket | ✅ Active |
+| 📡 Network | Nmap · Wireshark · Responder | ✅ Active |
+| ☁️ Cloud | AWS · Azure AD · Pacu | 🔄 Learning |
+| 🦠 Malware Dev | C/C++ · Python · msfvenom | 🔄 Learning |
+| 🔴 C2 Frameworks | Cobalt Strike · Havoc · Sliver | 🔄 Learning |
+
+</div>
 
 ---
 
-## 🏅 TryHackMe
+## 🚩 CTF & Labs
 
 <div align="center">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/sanon8268.png" alt="TryHackMe"/>
+
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-sanon8268-red?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/sanon8268)
+[![HackTheBox](https://img.shields.io/badge/HackTheBox-sanon8268-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/profile/)
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/sanon8268.png" alt="TryHackMe"/>
+
 </div>
+
+---
+
+## 📚 Currently Studying
+
+```
+[▓▓▓▓▓▓▓▓▓░] 85%  Active Directory Attacks
+[▓▓▓▓▓▓▓░░░] 70%  Web Application Exploitation  
+[▓▓▓▓▓░░░░░] 50%  Malware Development (C/C++)
+[▓▓▓▓░░░░░░] 40%  EDR Evasion Techniques
+[▓▓░░░░░░░░] 20%  C2 Framework Development
+```
 
 ---
 
