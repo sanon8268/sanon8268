@@ -1,59 +1,88 @@
-<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#1a1a2e"/>
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="60%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#1a0a0a"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <pattern id="scan" x="0" y="0" width="1" height="4" patternUnits="userSpaceOnUse">
+      <rect width="1" height="2" fill="#000000" opacity="0.08"/>
+    </pattern>
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#ff000015"/>
+    </pattern>
   </defs>
 
-  <rect width="900" height="200" fill="url(#bg)"/>
+  <!-- Base -->
+  <rect width="900" height="220" fill="url(#bg)"/>
+  <rect width="900" height="220" fill="url(#dots)"/>
+  <rect width="900" height="220" fill="url(#scan)"/>
 
-  <!-- Grid dots -->
-  <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="#ff000018"/>
-  </pattern>
-  <rect width="900" height="200" fill="url(#grid)"/>
+  <!-- Side vignette -->
+  <rect width="120" height="220" fill="url(#bg)" opacity="0.6"/>
+  <rect x="780" width="120" height="220" fill="url(#bg)" opacity="0.6"/>
 
-  <!-- Top/bottom accent lines -->
-  <rect width="900" height="3" fill="#ff0000" opacity="0.7"/>
-  <rect y="197" width="900" height="3" fill="#ff0000" opacity="0.7"/>
+  <!-- Top accent bar -->
+  <rect width="900" height="2" fill="#ff0000" opacity="0.9"/>
+  <!-- Bottom accent bar -->
+  <rect y="218" width="900" height="2" fill="#ff0000" opacity="0.9"/>
 
-  <!-- Corner brackets -->
-  <polyline points="0,0 0,30" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="0,0 40,0" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="900,0 860,0" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="900,0 900,30" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="0,200 0,170" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="0,200 40,200" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="900,200 860,200" stroke="#ff0000" stroke-width="2" fill="none"/>
-  <polyline points="900,200 900,170" stroke="#ff0000" stroke-width="2" fill="none"/>
+  <!-- Glitch slice -->
+  <rect x="200" y="88" width="500" height="4" fill="#ff000008"/>
+  <rect x="180" y="92" width="540" height="2" fill="#ff000005"/>
 
-  <!-- Hex decoration left -->
-  <text x="30" y="105" fill="#ff000030" font-size="11" font-family="monospace">0x4F 0x46 0x46</text>
-  <text x="30" y="120" fill="#ff000030" font-size="11" font-family="monospace">0x53 0x45 0x43</text>
+  <!-- Corner brackets TL -->
+  <polyline points="0,0 0,40" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <polyline points="0,0 50,0" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <!-- Corner brackets TR -->
+  <polyline points="900,0 850,0" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <polyline points="900,0 900,40" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <!-- Corner brackets BL -->
+  <polyline points="0,220 0,180" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <polyline points="0,220 50,220" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <!-- Corner brackets BR -->
+  <polyline points="900,220 850,220" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
+  <polyline points="900,220 900,180" stroke="#ff0000" stroke-width="2.5" fill="none" opacity="0.9"/>
 
-  <!-- Hex decoration right -->
-  <text x="750" y="105" fill="#ff000030" font-size="11" font-family="monospace">0x52 0x45 0x44</text>
-  <text x="750" y="120" fill="#ff000030" font-size="11" font-family="monospace">0x54 0x45 0x41</text>
+  <!-- Left label -->
+  <text x="22" y="108" fill="#ff000045" font-size="10" font-family="monospace" letter-spacing="1">[ RED TEAM ]</text>
+  <text x="22" y="122" fill="#ff000030" font-size="9"  font-family="monospace" letter-spacing="1">0x4F 0x46 0x46</text>
+  <text x="22" y="134" fill="#ff000025" font-size="9"  font-family="monospace" letter-spacing="1">0x53 0x45 0x43</text>
 
-  <!-- Main title -->
-  <text x="450" y="98" text-anchor="middle" fill="#ff2222"
-        font-size="76" font-weight="bold" font-family="monospace"
-        filter="url(#glow)" letter-spacing="12">SAN0N</text>
+  <!-- Right label -->
+  <text x="878" y="108" fill="#ff000045" font-size="10" font-family="monospace" letter-spacing="1" text-anchor="end">[ OFFENSIVE SEC ]</text>
+  <text x="878" y="122" fill="#ff000030" font-size="9"  font-family="monospace" letter-spacing="1" text-anchor="end">0x52 0x45 0x44</text>
+  <text x="878" y="134" fill="#ff000025" font-size="9"  font-family="monospace" letter-spacing="1" text-anchor="end">0x54 0x45 0x41</text>
+
+  <!-- Shadow/depth layer for title -->
+  <text x="453" y="121" text-anchor="middle" fill="#ff000030"
+        font-size="88" font-weight="bold" font-family="monospace" letter-spacing="14">SAN0N</text>
+
+  <!-- Main glowing title -->
+  <text x="450" y="118" text-anchor="middle" fill="#ff2222"
+        font-size="88" font-weight="bold" font-family="monospace"
+        letter-spacing="14" filter="url(#glow)">SAN0N</text>
+
+  <!-- Divider line -->
+  <line x1="200" y1="138" x2="700" y2="138" stroke="#ff000050" stroke-width="1"/>
+  <line x1="300" y1="138" x2="600" y2="138" stroke="#ff000090" stroke-width="1"/>
 
   <!-- Subtitle -->
-  <text x="450" y="138" text-anchor="middle" fill="#888888"
-        font-size="14" font-family="monospace" letter-spacing="3">
-    RED TEAM  ·  OFFENSIVE SECURITY  ·  CTF PLAYER
-  </text>
+  <text x="450" y="162" text-anchor="middle" fill="#aaaaaa"
+        font-size="13" font-family="monospace" letter-spacing="4"
+        filter="url(#softglow)">RED TEAM  ·  OFFENSIVE SECURITY  ·  CTF PLAYER</text>
 
-  <!-- Status bar bottom -->
-  <text x="450" y="172" text-anchor="middle" fill="#ff000055"
-        font-size="11" font-family="monospace">
-    [ ADVERSARY SIMULATION · PENETRATION TESTING · SECURITY RESEARCH ]
+  <!-- Bottom status -->
+  <text x="450" y="196" text-anchor="middle" fill="#ff000060"
+        font-size="10" font-family="monospace" letter-spacing="2">
+    ⚔ ADVERSARY SIMULATION  ·  PENETRATION TESTING  ·  SECURITY RESEARCH ⚔
   </text>
 </svg>
