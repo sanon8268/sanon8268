@@ -16,8 +16,8 @@
 ┌──(kali㉿kali)-[~]
 └─$ cat skills.txt
   ✦ Adversary Simulation & Penetration Testing
-  ✦ Active Directory (Kerberoasting, Pass-the-Hash, BloodHound)
-  ✦ Web Exploitation (SQLi, XSS, SSRF, IDOR)
+  ✦ Active Directory
+  ✦ Web Exploitation
   ✦ Malware Development  ·  Security Automation
   ✦ Cloud & Network Security  ·  OSINT & Recon
 
@@ -25,8 +25,6 @@
 └─$ cat status.txt
   ⚡ Currently  : Building toward Red Team Operator
   🚩 CTF        : TryHackMe | HackTheBox
-  📖 Learning   : EDR Evasion, C2 Frameworks, OPSEC
-  🎯 Goal       : OSCP → Red Team Ops
 ```
 
 ---
