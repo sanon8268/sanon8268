@@ -9,11 +9,11 @@
 
 <!-- Terminal About -->
 ```bash
-┌──(sanon8268㉿kali)-[~]
+┌──(kali㉿kali)-[~]
 └─$ whoami
   > Red Team Enthusiast | Offensive Security | CTF Addict
 
-┌──(sanon8268㉿kali)-[~]
+┌──(kali㉿kali)-[~]
 └─$ cat skills.txt
   ✦ Adversary Simulation & Penetration Testing
   ✦ Active Directory (Kerberoasting, Pass-the-Hash, BloodHound)
@@ -21,7 +21,7 @@
   ✦ Malware Development  ·  Security Automation
   ✦ Cloud & Network Security  ·  OSINT & Recon
 
-┌──(sanon8268㉿kali)-[~]
+┌──(kali㉿kali)-[~]
 └─$ cat status.txt
   ⚡ Currently  : Building toward Red Team Operator
   🚩 CTF        : TryHackMe | HackTheBox
@@ -31,20 +31,25 @@
 
 ---
 
-## 📊 Stats — self-generated, no third parties
+## 📊 Stats - self-generated, no third parties
 
-<div align="center">
-  <img src="./assets/stats.svg" width="49%" alt="Stats"/>
-  <img src="./assets/langs.svg" width="49%" alt="Languages"/>
-</div>
+<table width="100%" align="center">
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/sanon8268/sanon8268/main/assets/stats.svg" width="100%" alt="Stats"/>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/sanon8268/sanon8268/main/assets/langs.svg" width="100%" alt="Languages"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🐍 Contribution Snake
 
 <div align="center">
-  <img src="https://github.com/sanon8268/sanon8268/blob/output/github-contribution-grid-snake-dark.svg"
-       alt="snake" width="100%"/>
+  <img src="https://raw.githubusercontent.com/sanon8268/sanon8268/output/github-contribution-grid-snake-dark.svg" width="100%" alt="snake"/>
 </div>
 
 ---
