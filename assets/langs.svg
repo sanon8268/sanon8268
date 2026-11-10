@@ -1,0 +1,38 @@
+<svg width="480" height="175" viewBox="0 0 480 175" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="175" fill="url(#bg)" rx="10"/>
+  <rect width="480" height="175" fill="none" stroke="#ff0000" stroke-width="1" rx="10" opacity="0.35"/>
+
+  <text x="24" y="38" fill="#ff4444" font-size="15" font-weight="bold" font-family="monospace">💻  Most Used Languages</text>
+  <line x1="24" y1="48" x2="456" y2="48" stroke="#ff000033" stroke-width="1"/>
+  <text x="24" y="64" fill="#444" font-size="10" font-family="monospace">across public repos  ·  by bytes of code</text>
+
+  <rect x="24" y="70" width="111" height="10" fill="#e34c26" rx="2"/><rect x="135" y="70" width="102" height="10" fill="#c6538c" rx="2"/><rect x="237" y="70" width="101" height="10" fill="#1d365d" rx="2"/><rect x="338" y="70" width="78" height="10" fill="#663399" rx="2"/><rect x="416" y="70" width="28" height="10" fill="#f1e05a" rx="2"/><rect x="444" y="70" width="8" height="10" fill="#3572A5" rx="2"/>
+  
+  <circle cx="29" cy="102" r="5" fill="#e34c26"/>
+  <text x="38" y="106" fill="#cccccc" font-size="11" font-family="monospace">HTML</text>
+  <text x="38" y="118" fill="#666" font-size="10" font-family="monospace">25.9%</text>
+  <circle cx="103" cy="102" r="5" fill="#c6538c"/>
+  <text x="112" y="106" fill="#cccccc" font-size="11" font-family="monospace">SCSS</text>
+  <text x="112" y="118" fill="#666" font-size="10" font-family="monospace">23.7%</text>
+  <circle cx="177" cy="102" r="5" fill="#1d365d"/>
+  <text x="186" y="106" fill="#cccccc" font-size="11" font-family="monospace">Less</text>
+  <text x="186" y="118" fill="#666" font-size="10" font-family="monospace">23.4%</text>
+  <circle cx="251" cy="102" r="5" fill="#663399"/>
+  <text x="260" y="106" fill="#cccccc" font-size="11" font-family="monospace">CSS</text>
+  <text x="260" y="118" fill="#666" font-size="10" font-family="monospace">18.2%</text>
+  <circle cx="323" cy="102" r="5" fill="#f1e05a"/>
+  <text x="332" y="106" fill="#cccccc" font-size="11" font-family="monospace">JavaScript</text>
+  <text x="332" y="118" fill="#666" font-size="10" font-family="monospace">6.5%</text>
+  <circle cx="29" cy="146" r="5" fill="#3572A5"/>
+  <text x="38" y="150" fill="#cccccc" font-size="11" font-family="monospace">Python</text>
+  <text x="38" y="162" fill="#666" font-size="10" font-family="monospace">2.0%</text>
+
+  <text x="464" y="167" fill="#333" font-size="9" font-family="monospace"
+        text-anchor="end">auto-generated · 2026-11-10 15:38 UTC</text>
+</svg>

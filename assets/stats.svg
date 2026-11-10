@@ -1,0 +1,30 @@
+<svg width="480" height="210" viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="210" fill="url(#bg)" rx="10"/>
+  <rect width="480" height="210" fill="none" stroke="#ff0000" stroke-width="1" rx="10" opacity="0.35"/>
+
+  <text x="24" y="44" fill="#ff4444" font-size="15" font-weight="bold" font-family="monospace">📊  sanon8268 · GitHub Stats</text>
+  <line x1="24" y1="52" x2="456" y2="52" stroke="#ff000033" stroke-width="1"/>
+
+  
+  <text x="24" y="74" fill="#666" font-size="11" font-family="monospace">★ Stars</text>
+  <text x="24" y="88" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">0</text>
+  <text x="250" y="74" fill="#666" font-size="11" font-family="monospace">↯ Commits</text>
+  <text x="250" y="88" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">3</text>
+  <text x="24" y="128" fill="#666" font-size="11" font-family="monospace">⌥ Pull Reqs</text>
+  <text x="24" y="142" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">0</text>
+  <text x="250" y="128" fill="#666" font-size="11" font-family="monospace">⚡ Issues</text>
+  <text x="250" y="142" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">0</text>
+  <text x="24" y="182" fill="#666" font-size="11" font-family="monospace">⬡ Repos</text>
+  <text x="24" y="196" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">21</text>
+  <text x="250" y="182" fill="#666" font-size="11" font-family="monospace">♦ Followers</text>
+  <text x="250" y="196" fill="#ff4444" font-size="22" font-weight="bold" font-family="monospace">5</text>
+
+  <text x="464" y="202" fill="#333" font-size="9" font-family="monospace"
+        text-anchor="end">auto-generated · 2026-11-10 15:38 UTC</text>
+</svg>
